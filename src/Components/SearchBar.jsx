@@ -12,6 +12,8 @@ function SearchBar() {
   const [searchInput, setSearchInput] = useState('')
   const allTask = JSON.parse(localStorage.getItem("taskCollection"));
 
+
+  //Returns all matching todo's from search input
   const searchResult = (input) => {
     if (input !== '') {
       setUserInput(true)
@@ -41,7 +43,7 @@ function SearchBar() {
         className='new-task-btn'
         onClick={()=> setShowModal(prev => !prev)}
       >
-        New Task
+        New
       </button>
     </div>
   );

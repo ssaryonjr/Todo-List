@@ -11,10 +11,11 @@ function TodoItem(props) {
   const [completed, setCompleted] = useState(false)
   const [editMode, setEditMode] = useState(false)
   const [updatedTitle, setUpdatedTitle] = useState(props.title)
-  const {setAllTasks, allTasks} = useContext(TodoContext)
+  const {setAllTasks} = useContext(TodoContext)
 
   const taskCollection = JSON.parse(localStorage.getItem("taskCollection"));
 
+  
   const deleteTask = (taskId) => {
     console.log(taskCollection)
     const deleted = taskCollection.filter((t) => t.id !== taskId);
@@ -30,13 +31,12 @@ function TodoItem(props) {
       return obj.id === props.id
     })
 
-    const updatedTask = taskCollection[index].title = updatedTitle
-
-    console.log(index)
-    setAllTasks([...allTasks, updatedTask])
+    //Updates new title from input.
+    taskCollection[index].title = updatedTitle
+    setAllTasks(taskCollection)
     localStorage.setItem(
       "taskCollection",
-      JSON.stringify([...allTasks, updateTask])
+      JSON.stringify(taskCollection)
     );
 
     setEditMode(false)

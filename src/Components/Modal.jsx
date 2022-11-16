@@ -15,16 +15,21 @@ function Modal() {
 
   const addTask = (e) => {
     e.preventDefault()
+    
+    //Validates input is not empty & is not too long.
     if (task.length < 1 || task.length > 25) {
       return setErrMsg(true)
     } else {
       setErrMsg(false)
       const newTask = { id: new Date().getTime().toString(), title: task };
+
       setAllTasks([...allTasks, newTask]);
       localStorage.setItem(
         "taskCollection",
         JSON.stringify([...allTasks, newTask])
       );
+
+
       setTask("")
       setShowModal(false)
     }
