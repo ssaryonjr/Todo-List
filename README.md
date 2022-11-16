@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Todo List - Track Task (RapptrLabs Special)
+A Todo List application to add, delete, edit track your daily task, and complete all your goals!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+<img src="https://i.imgur.com/0fbT4gr.png" height="500px" />
+</p>
 
-## Available Scripts
+## How It's made: 
+<p align="left">
+<img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" height=25>
+</p>
 
-In the project directory, you can run:
+<b>Technologies & Tools Utilized:</b> Python, Twilio API, other RESTful API.</b> This application creates automated scheduled text messages to opted in users at 7:00AM every day. These text messages are daily quotes that are being fetched from a free third-party api full of collections of inspirational quotes and uses Twilio's API to allow messaging between the server and the users phone. 
 
-### `npm start`
+- I started off by importing the `Request` library for Python to start making API calls.
+- I linked my Twilio account data such as `account_sid` and `auth_token` to allow me to start sending text messages to verified phone accounts.
+- I used the `random` library to fetch one random quote from the API and use that data to send it to users.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Lessons Learned
+- This was my first project I've built in Python and it was a lot of fun learning the syntax and finally having a chance to integrate Twilio into a project. I learnt a ton in a short amount of time building this project such as fetching data from a third-party api in python, using the `random` library,  integrating Twilio and setting up automated task. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation: 
+1. Clone repository
+2. `pip install request, twilio, schedule`
+3. Create or link your Twilio account and fill in your `account_sid` and `auth_token`
+4. Add in your Twilio number and the targeted number you would like to have the message sent to.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Future Optimizations:
+- Create a paid Twilio account
+- Integrate a frontend for users to register their number into a database that will be used for allowing multi-user SMS. (Currently twilio's free account only lets you set up one number)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h2 align="center">
+More Projects
+</h2>
+<table bordercolor="#66b2b2">
+  <tr>
+    <td width="33.3%"  style="align:center;" valign="top">
+<a target="_blank" href="https://github.com/ssaryonjr/Chit-chat" align="center">Chitchat - Messaging App</a>
+        <br />
+      <a target="_blank" href="https://github.com/ssaryonjr/Chit-chat">
+            <img src="https://github.com/ssaryonjr/ssaryonjr/raw/main/chitchat.gif?raw=true" width="100%" height="210px" />
+        </a>
+    </td>
+    <td width="33.3%" valign="top">
+<a target="_blank" href="https://github.com/ssaryonjr/iMovie-Reviews"> iMovie Reviews</a>
+      <br />
+        <a target="_blank" href="https://github.com/ssaryonjr/iMovie-Reviews">
+          <img src="https://github.com/ssaryonjr/ssaryonjr/raw/main/imovie.gif?raw=true" width="100%" height="210px" />
+        </a>
+    </td>
+    <td width="33.3%" valign="top">
+<a target="_blank" href="https://github.com/ssaryonjr/T-K-Restaurant-">T&K Nigerian Restaurant</a>
+        <br />
+        <a target="_blank" href="https://github.com/ssaryonjr/T-K-Restaurant-">
+          <img src="https://github.com/ssaryonjr/ssaryonjr/raw/main/ezgif.com-gif-maker%20(5).gif?raw=true" width="100%" height="210px" alt="Portfolio"/>
+        </a>
+    </td>
+  </tr>
+</table>
