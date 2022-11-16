@@ -3,6 +3,7 @@ A Todo List application to add, delete, edit track your daily task, and complete
 
 <p align="center">
 <img src="https://i.imgur.com/0fbT4gr.png" height="500px" />
+<img src="https://i.imgur.com/RxiC6on.png" height="500px" />
 </p>
 
 ## How It's made: 
