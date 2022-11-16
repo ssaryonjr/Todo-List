@@ -6,18 +6,20 @@ A Todo List application to add, delete, edit track your daily task, and complete
 </p>
 
 ## How It's made: 
-<p align="left">
-<img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" height=25>
+<p align="center">
+<img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" height=25>
+<img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" height=25>
+<img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" height=25>
 </p>
 
-<b>Technologies & Tools Utilized:</b> Python, Twilio API, other RESTful API.</b> This application creates automated scheduled text messages to opted in users at 7:00AM every day. These text messages are daily quotes that are being fetched from a free third-party api full of collections of inspirational quotes and uses Twilio's API to allow messaging between the server and the users phone. 
+<b>Technologies & Tools Utilized:</b> React, JavaScript, CSS3.</b> This application is a Todo List Tracker that is both Desktop and Mobile web friendly. Built in React on the frontend allowing very fast UI changes.
 
-- I started off by importing the `Request` library for Python to start making API calls.
-- I linked my Twilio account data such as `account_sid` and `auth_token` to allow me to start sending text messages to verified phone accounts.
-- I used the `random` library to fetch one random quote from the API and use that data to send it to users.
+- I followed along the directions by first using Postman to test the API endpoint.
+- I created a login component that validates all criterias are matched before creating a `POST` request to endpoint.
+- Once access granted users are allowed to add, delete, edit and track their task that will remain available in their browsers `local storage`.
 
 ## Lessons Learned
-- This was my first project I've built in Python and it was a lot of fun learning the syntax and finally having a chance to integrate Twilio into a project. I learnt a ton in a short amount of time building this project such as fetching data from a third-party api in python, using the `random` library,  integrating Twilio and setting up automated task. 
+- The project was straight forward and very easy. My biggest hurdle was in the beginning creating the Login component and validating that every criteria was met successfully. I spent more time building the login component than I did on the main page. Another lesson I learned was managing my time well to get everything done in a feasible time while keeping up with work and other responsibilities. I'd say in total I spent about 5-6 hours working on this project and adding finishing touches.
 
 ## Installation: 
 1. Clone repository
