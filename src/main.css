@@ -1,0 +1,425 @@
+/* Imported Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Default style settings */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  font-size: 62.5%
+}
+
+.page-container{
+  background-color: #ebeef6;
+  width: 100vw;
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Login Page */
+.login-box{
+  width: 46.5rem;
+  height: 48.5rem;
+  background-color: #fff;
+  padding: 6.5rem 5.5rem;
+  border-radius: 1.5rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.login-title{
+  font-size: 3.8rem;
+  text-align: center;
+  margin-bottom: 1.1rem;
+}
+
+.login-subtitle{
+  color: #95959d;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.login-form{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.input-wrapper{
+  position: relative;
+  margin-bottom: 2.1rem;
+  width: 100%;
+  height: 7.2rem;
+}
+
+.login-input{
+  border: 2px solid #d1d4eb;
+  width: 100%;
+  height: 5rem;
+  border-radius: .8rem;
+  padding: 0 2rem 0 4rem;
+  outline: none;
+  font-size: 1.5rem;
+}
+
+
+.login-input:focus{
+  border: 2px solid #155dc1a8;
+}
+.email-input::placeholder{
+  color: #a5a4ac;
+  font-size: 1.5rem;
+}
+
+.email-label,
+.password-label{
+  position: absolute;
+  text-align: center;
+  left: 2rem;
+  top: -1rem;
+  display: inline-block;
+  background-color: #fff;
+  width: 5.5rem;
+  font-size: 1.7rem;
+  font-weight:500;
+  color: #95959d;
+}
+
+.password-label{
+  width: 9rem;
+}
+
+.login-icon{
+  position: absolute;
+  font-size: 2rem;
+  color: #cfcfd3;
+  left: 1.5rem;
+  top: 1.5rem;
+}
+
+.password-icon{
+  position: absolute;
+  font-size: 2rem;
+  color: #cfcfd3;
+  left: 1.5rem;
+  top: 1.5rem;
+}
+
+.input-error,
+.input-error-submit{
+  color: #da0000;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: .5rem 0 0 .9rem;
+}
+
+.input-error-submit{
+  text-align: center;
+}
+
+.login-submit-btn{
+  background-color: #0e68f9;
+  color: #fff;
+  font-size: 1.9rem;
+  width: 100%;
+  height: 5rem;
+  border-radius: .9rem;
+  border: none;
+  transition: 0.5s;
+}
+
+.login-submit-btn:hover{
+  background-color: #004ecd;
+  cursor: pointer;
+}
+
+
+/* Homepage */
+.main-wrapper{
+  width: 56.5rem;
+  height: 68.5rem;
+  background-color: #fff;
+  border-radius: 1.5rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.todo-list-wrapper{
+  overflow: auto;
+  max-height: calc(68.5rem - 148px);
+  width: 100%;
+}
+
+.user-nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-color: rgb(29, 28, 28);
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  padding: 1rem 3rem;
+}
+
+.user-profile{
+  border-radius: 100%;
+  width: 6rem;
+  height: 6rem;
+  border: 1px solid #a3a8b1ae;
+  padding: .7rem;
+}
+
+.page-title{
+  color: #f5f5f5;
+  font-size: 3.6rem;
+  margin-top: 1rem;
+  font-weight: 800;
+  margin-left: 1rem;
+  text-transform: capitalize;
+  margin-right: auto;
+}
+
+.list-icon{
+  color: #ced0d1;
+  font-size: 3.4rem;
+}
+
+.logout-icon{
+  color: #eeeeee;
+  margin-right: .5rem;
+}
+
+
+.todo-list-body{
+  padding: 3.5rem 5.5rem;
+}
+
+
+.logout-btn{
+  width: 12rem;
+  height: 4rem;
+  outline: none;
+  border-radius: .6rem;
+  font-size: 1.9rem;
+  font-weight: 500;
+  color: #eeeeee;
+  background-color:#0B93F6;
+  border: none;
+}
+
+/* Search Component*/
+.search-container {
+  width: 100%;
+  height: 7.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #dee2e6;
+  padding: .7rem 2rem;
+}
+
+.search-input{
+  width: 90%;
+  max-width: 65rem;
+  height: 4rem;
+  outline: none;
+  border: 1px solid #ced4da;
+  border-top-right-radius: .7rem;
+  border-bottom-right-radius: .7rem;
+  padding: .4rem 1rem;
+  font-size: 1.7rem;
+}
+
+.search-icon{
+  font-size: 2rem;
+  color: #495057;
+  text-align: center;
+  padding: .7rem 1rem;
+  border-top-left-radius: .7rem;
+  border-bottom-left-radius: .7rem;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da
+}
+
+.modify-icon{
+  color: #878787;
+  font-size: 2.2rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+
+.new-task-btn,
+.new-task-btn-submit,
+.task-edit-btn{
+  padding: .2rem 1rem;
+  width: 11rem;
+  margin-left: 1rem;
+  height: 4rem;
+  background-color: #0B93F6;
+  border: none;
+  border-radius: .5rem;
+  color: #fff;
+  font-size: 1.65rem;
+  transition: 0.4s;
+}
+
+.new-task-btn:hover{
+  cursor: pointer;
+  background-color: #016fbe;
+
+}
+/* Todo Item Component */
+.todo-item-container {
+  width: 100%;
+  border: 1px solid #00000020;
+  padding: 1.2rem 2rem;
+  height: 7.8rem;
+  border-left: 8px solid  #0B93F6;
+  display: flex;
+  align-items: center;
+}
+
+.todo-checkbox{
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: .3rem;
+}
+
+.todo-desc-wrapper{
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+  margin-right: auto;
+  width: 100%;
+}
+
+.todo-title{
+  font-size: 2rem;
+  color: #212529cb;
+  margin-bottom: .2rem;
+}
+
+.todo-subtitle{
+  color: #adb5bd;
+  font-size: 1.8rem;
+}
+
+.edit-task-input{
+  width: 100%;
+  height: 4rem;
+  font-size: 2rem;
+  color: #212529cb;
+  font-weight: 600;
+  outline: none;
+  border: 1px solid #ced4da;
+  padding: .1rem .5rem;
+  border-radius: 0.7rem;
+}
+
+/*Modal */
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.571);
+  backdrop-filter: blur(5px);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.modal-content{
+  width: 100%;
+  max-width: 40rem;
+  min-height: 19rem;
+  margin: 0 1.5rem;
+  background-color: #fff;
+  border-radius: 1.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 3rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.close-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color:#0B93F6;
+  color: white;
+  border-radius: 2rem;
+  border: none;
+  font-size: 1.5rem;
+  position: absolute;
+  right: -6px;
+  font-weight: bold;
+  top: -10px;
+  cursor: pointer;
+}
+
+.close-btn:hover{
+  background-color: #0869af;
+  transition: 0.5s;
+}
+
+.modal-form{
+  width: 100%;
+}
+
+.form-label-title{
+  font-size: 2rem;
+  font-weight: 500;
+  display: block;
+}
+
+.new-task-title{
+  width: 100%;
+  height: 4rem;
+  font-size: 1.7rem;
+  outline: none;
+  border: 1px solid #ced4da;
+  border-radius: .5rem;
+  padding: 0.2rem 1rem;
+}
+
+.new-task-details{
+  display: block;
+  width: 100%;
+  height: 15rem;
+  appearance: none;
+  font-size: 1.7rem;
+  resize: none;
+  padding: 1rem 1.4rem;
+  outline: none;
+  border: 1px solid #ced4da;
+  border-radius: .5rem;
+}
+
+.new-task-btn-submit{
+  margin-top: 1.5rem;
+  margin-left: auto;
+  width: 100%;
+}
+
+.new-task-btn-submit:hover{
+  cursor: pointer;
+  background-color: #0075c8;
+}
+
+.task-edit-btn{
+  background-color: #019501;
+}
+
+.task-edit-btn:hover{
+  background-color: #036903;
+  cursor: pointer;
+}
