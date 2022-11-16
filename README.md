@@ -19,19 +19,17 @@ A Todo List application to add, delete, edit track your daily task, and complete
 - Once access granted users are allowed to add, delete, edit and track their task that will remain available in their browsers `local storage`.
 
 ## Lessons Learned
-- The project was straight forward and very easy. My biggest hurdle was in the beginning creating the Login component and validating that every criteria was met successfully. I spent more time building the login component than I did on the main page. Another lesson I learned was managing my time well to get everything done in a feasible time while keeping up with work and other responsibilities. I'd say in total I spent about 5-6 hours working on this project and adding finishing touches.
+- The project was straight forward and very easy. My biggest hurdle was in the beginning creating the Login component and validating that every criteria was met successfully. I spent more time building the login component than I did on the main page. Another lesson I learned was managing my time well to get everything done in a feasible time while keeping up with work and other responsibilities. I'd say in total I spent about 4-5 hours working on this project and adding finishing touches.
 
 ## Installation: 
 1. Clone repository
-2. `pip install request, twilio, schedule`
-3. Create or link your Twilio account and fill in your `account_sid` and `auth_token`
-4. Add in your Twilio number and the targeted number you would like to have the message sent to.
+2. `cd frontend`
+3. `npm start`
 
 
 
 ## Future Optimizations:
-- Create a paid Twilio account
-- Integrate a frontend for users to register their number into a database that will be used for allowing multi-user SMS. (Currently twilio's free account only lets you set up one number)
+- If I had more time I would refactor a lot of code. My approach is alwayes to get things up and running first and later go back and optimize.
 
 <h2 align="center">
 More Projects
